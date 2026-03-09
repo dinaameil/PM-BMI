@@ -43,4 +43,14 @@ void main() {
     String? pilihan = stdin.readLineSync()?.toLowerCase();
     if (pilihan != 'y') lanjut = false;
   }
+  
+  print("\n=== RIWAYAT PERHITUNGAN ===");
+  if (riwayat.isEmpty) {
+    print("Belum ada data.");
+  } else {
+    for (var i = 0; i < riwayat.length; i++) {
+      print("${i + 1}. ${riwayat[i]}");
+    }
+  }
+  print("===========================");
 }
